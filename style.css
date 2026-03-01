@@ -23,9 +23,24 @@ h2{
 
 #start-btn {
     margin: 15px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    border-radius: 8px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#start-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#start-btn:active {
+    transform: scale(0.95);
 }
 
 #game-board{
@@ -61,5 +76,4 @@ h2{
 
 .flash{
     opacity: 0.1;
-
 }
