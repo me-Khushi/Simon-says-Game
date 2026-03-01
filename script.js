@@ -15,6 +15,13 @@ startBtn.addEventListener("click", function () {
     }
 });
 
+document.addEventListener("keypress", function () {
+    if (!started) {
+        levelUp();
+        started = true;
+    }
+});
+
 function flashButton(button) {
     button.classList.add("flash");
     setTimeout(function () {
