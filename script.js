@@ -6,8 +6,10 @@ let started = false;
 
 let colors = ["red", "blue", "green", "yellow"];
 
-document.addEventListener("keypress", function () {
-    if (started === false) {
+let startBtn = document.querySelector("#start-btn");
+
+startBtn.addEventListener("click", function () {
+    if (!started) {
         levelUp();
         started = true;
     }
@@ -65,4 +67,5 @@ function checkUserSequence() {
 let btns = document.querySelectorAll(".color-button");
 for (btn of btns) {
     btn.addEventListener("click", userPressButton);
+
 }
