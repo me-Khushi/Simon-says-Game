@@ -21,6 +21,13 @@ h2{
     margin: 10px;
 }
 
+#start-btn {
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
 #game-board{
     display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -54,4 +61,5 @@ h2{
 
 .flash{
     opacity: 0.1;
+
 }
