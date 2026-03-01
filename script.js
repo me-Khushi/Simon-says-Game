@@ -9,7 +9,7 @@ let colors = ["red", "blue", "green", "yellow"];
 let startBtn = document.querySelector("#start-btn");
 
 startBtn.addEventListener("click", function () {
-    if (!started) {
+    if (started === false) {
         levelUp();
         started = true;
     }
@@ -69,3 +69,4 @@ for (btn of btns) {
     btn.addEventListener("click", userPressButton);
 
 }
+
